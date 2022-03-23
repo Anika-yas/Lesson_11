@@ -1,0 +1,281 @@
+/* --------------------------обнуление---------------------------- */
+@import url(null.css);
+
+/* ----------------------подключение шрифтов---------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* ----------------------оболочка--------------------- */
+.wrapper {
+	min-height: 100%;
+    position: relative;
+}
+/* ----------------------container--------------------- */
+
+[class*="__container"] {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+
+/* ----------------------header--------------------- */
+.container-for-header {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.header{
+    position: fixed;
+    z-index: 50;
+    top: 26px;
+    max-width: 1020px;
+}
+
+.header__top {
+    position: relative;
+    margin:  0 0 27px 0;
+}
+.top__logo {
+    display: inline-block;
+    margin: 0 236px 0 0;
+    vertical-align: middle;
+}
+.top__img{
+    width: 174px;
+}
+.top__contacts {
+    display: inline-block;
+}
+.top__info {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    align-items: center;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+    padding: 0 0 0 34px;
+    margin: 0 33px 0 0;
+    vertical-align: middle;
+}
+
+.top__info:last-child{
+    margin: 0 34px 0 0;
+}
+.top__info_time {
+    font-weight: 700;
+    background: url(../img/icons/header/access-time.svg) 0 0 / 24px no-repeat;
+}
+.top__info_phone {
+    background: url(../img/icons/header/phone.svg) 0 0 / 24px no-repeat;
+}
+.top__button {
+}
+.button {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F2726F;
+    border-radius: 8px;
+    padding: 9px 34px;
+}
+
+/* ----------------------header-menu--------------------- */
+
+
+.header__menu {
+    position: relative;
+}
+.menu {
+    padding: 10px 40px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+}
+.menu__list {
+    display: inline-block;
+    margin: 0 306px 0 0; 
+}
+.menu__item {    
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.menu__item:not(:first-child) {    
+    margin: 0 0 0 37px;
+}
+.menu__item:last-child {    
+    margin: 0 0 0 39px;
+}
+.menu__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: 0.15px;
+}
+.menu__link_expand::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    background: url(../img/icons/header/expand-more.svg) 2px 3px no-repeat;
+    width: 16px;
+    height: 16px;
+}
+.menu__shoping {
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu__search {
+    display: inline-block;
+    margin: 0 22px 0 0;
+}
+.menu__cart {
+    display: inline-block;
+    position: relative;
+
+}
+.cart {
+    display: inline-block;
+
+}
+.cart__img {
+    display: inline-block;
+    width: 20px;
+}
+.cart__ellipse {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    top: -7px;
+    left: 14px;
+}
+.cart__number {
+    display: inline-block;
+    position: absolute;
+    top: -4px;
+    left: 19px;
+
+}
+
+
+/* ----------------------main-----premier-dog---------------- */
+
+
+.premier-dog{
+    position: relative;
+    z-index: 1;
+    padding: 280px 0 312px;
+    background: url(../img/main/Premier-dog.png) 0 0/ cover no-repeat;
+}
+.premier-dog__title {
+    font-weight: 900;
+    font-size: 56px;
+    color: #FFFFFF;
+    margin: 0 0 48px 0;
+    max-width: 583px;
+}
+
+
+/* ----------------------main-----------who-we-are----------------- */
+
+.who-we-are {
+    position: relative;
+    z-index: 3;
+}
+.who-we-are__container {
+    background: #5D62B5;
+    border-radius: 40px;
+}
+.who-we-are__box {
+    max-width: 846px;
+    margin: -80px auto 230px;
+    position: relative;
+}
+.who-we-are__box::before {
+    content: "";
+    background: url(../img/icons/who-we-are/Blob-2.svg) left top / 100% no-repeat;
+    width: 514px;
+    height: 370px;
+    position: absolute;
+    z-index: 3;
+    bottom: -27px;
+    left: -36px;
+}
+.who-we-are__box::after {
+    content: "";
+    background: url(../img/icons/who-we-are/Stylize.svg) left top / 100% no-repeat;
+    width: 201px;
+    height: 317px;
+    position: absolute;
+    z-index: 3;
+    top: -109px;
+    right: -164px;
+}
+.who-we-are__content {
+    padding: 100px 0 354px;
+}
+.who-we-are__subtitle {
+    color: #F5F5F5;
+    margin: 0 0 33px 0;
+}
+.subtitle {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 0 0 0 33px;
+    position: relative;
+}
+.subtitle::before{
+    content: "";
+    background: url(../img/icons/who-we-are/mark.svg) 0 0 no-repeat;
+    width: 17px;
+    height: 20px;
+    position: absolute;
+    top:-1px;
+    left: 0;
+}
+
+.who-we-are__title {
+    color: #FFFFFF;
+    max-width: 583px;
+    margin: 0 0 36px 0;
+}
+.title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 1.17;
+}
+.who-we-are__text {
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: #F5F5F5;
+}
+.who-we-are__image {
+    position: absolute;
+    z-index: 4;
+    top: 400px;
+    left: 0;
+    border-radius: 40px;
+    overflow: hidden;
+    margin: 0 0 110px;
+}
+.who-we-are__img {
+    width: 100%;
+}
