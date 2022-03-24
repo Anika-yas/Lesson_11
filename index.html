@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +11,19 @@
 <div class="wrapper">
     <div class="container-for-header">
         <header class="header">
-            <!-- <div class="header__container"> -->
                 <div class="header__top top">
                     <a href="#" class="top__logo">
                         <img src="img/icons/header/logo.svg" alt="logotype" class="top__img">
                     </a>
                     <div class="top__contacts">
-                        <div class="top__info top__info_time">BOARDING HOURS <br>
-                            Mon - Sat: 7:00 am - 6:00 pm</div>
-                        <div class="top__info top__info_phone">CALL US <br> (555) Pup-Cares</div>
+                        <div class="top__info top__info_time">
+                            <h2 class="top__title">BOARDING HOURS</h2> 
+                            <p class="top__subtitle">Mon - Sat: 7:00 am - 6:00 pm</p>
+                        </div>
+                        <div class="top__info top__info_phone">
+                            <h2 class="top__title">CALL US</h2> 
+                            <a href="tel:555" class="top__subtitle">(555) Pup-Cares</a>
+                        </div>
                         <a href="#" class="top__button button">Make an Appointment</a>
                     </div>
                 </div>
@@ -44,7 +48,6 @@
                         </div>
                     </div>
                 </div>
-            <!-- </div> -->
         </header>
     </div>
     <main class="main">
@@ -70,14 +73,62 @@
                 </div>
             </div>
         </div>
-        <div class="our-proumise">
-            <div class="our-proumise__container">
-                <div class="our-proumise__subtitle subtitle">OUR PROMISE TO YOU</div>
-                <div class="our-proumise__title title">Sed perspiciatis omnis iste natus</div>
+
+            <!--  ==================== практика ==================== -->
+                <div class="appellative appellative__title title"> Практика</div>
+
+        <div class="block-main">
+            <div class="block-main__container">                
                 
-                
+                <!--  ==================== block relative ==================== -->
+
+                <div class="block-main__box">
+                    <div class="block block__name">Блок relative</div>
+                    <div class="block block_yellow"> block 1</div>
+                    <div class=" block block__relative block_blue">block 2</div>
+                    <div class="block block_pink">block 3</div>
+                </div>
+
+                <!-- ==================== block relative + z-index ==================== -->
+
+                <div class="block-main__box">
+                    <div class="block block__name">Блок relative + z-index</div>
+                    <div class="block block_yellow"> block 1</div>
+                    <div class="block block__relative block_blue">block 2 (z-index: 1)</div>
+                    <div class="block block_pink block__z-index">block 3 (z-index: 2)</div>
+                </div>
+
+                <!-- ==================== block relative + absolute ====================  -->
+
+                <div class="block-main__box">
+                    <div class="block block__name">Блок relative + absolute</div>
+                    <div class="block block__relative_yellow block_yellow"> block 1  (z-index: 4)</div>
+                    <div class="block block__relative_blue block_blue">block 2
+                        <div class="block_viol">block absolute</div>
+                    </div>
+                    <div class="block block_pink block__relative_pink">block 3 (z-index: 5)</div>
+                </div>
+
+                <!-- ==================== block stiky ==================== -->
+
+                <div class="block-main__box">
+                    <div class="block block__name">Блок stiky</div>
+                    <div class="block block_yellow block__stiky_yellow"> block 1</div>
+                    <div class="block block_blue">block 2</div>
+                    <div class="block block_pink block__stiky_pink">block 3</div>
+                </div>
+
+                <!-- ====================block fixed + absolute + stiky==================== -->
+
+                <div class="block-main__box block-main__relative">
+                    <div class="block block__name">Блок fixed + absolute + stiky </div>
+                    <div class="block block_yellow block__fixed_yellow"> block 1 (fixed)</div>
+                    <div class="block block_blue block__stiky_blue">block 2 (stiky)</div>
+                    <div class="block block_pink block__absolute_pink">block 3 (absolute)</div>
+                    <br><br><br><br><br><br><br><br><br><br>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
-            
         </div>
     </main>
     <footer class="footer">

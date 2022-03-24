@@ -279,3 +279,121 @@ body{
 .who-we-are__img {
     width: 100%;
 }
+
+/* -----------практика-------------------- */
+.appellative__title{
+    text-align: center;
+    text-decoration: underline;
+    margin: 0 0 50px 0;
+    font-size: 52px;
+    padding: 40px 0;
+    background: #c5f5c3;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.block-main__box{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    background: rgb(200, 200, 200);
+
+}
+.block-main__box:not(:last-child){
+    margin: 0 0 70px 0;
+}
+.block{
+    padding: 40px;
+}
+/* -----------background  block-------------------- */
+.block__name{
+    padding: 40px 0;
+    background: #FFF;
+}
+.block_blue {
+    max-width: 100%;
+    background-color: rgb(155, 232, 255);
+}
+.block_pink {
+    background-color: rgb(254, 215, 255);
+}
+.block_yellow {
+    background-color: rgb(255, 254, 170);
+}
+/* -----------block relative-------------------- */
+.block__relative{
+    position: relative;
+    top: 30px;
+    left: 45px;
+}
+/* -----------block relative + z-index-------------------- */
+
+.block__z-index{
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+/* -----------block relative + absolute-------------------- */
+
+.block_viol {
+    position: absolute;
+    background-color: rgb(135, 127, 251);
+    padding: 20px;
+    bottom: 2000px;
+    left:0; 
+}
+.block__relative_yellow{
+    position: relative;
+    top: 150px;
+    right: 80px;
+    z-index: 4;
+}
+
+.block__relative_pink{
+    position: relative;
+    bottom: 10px;
+    right: -30px;
+    z-index: 5;
+}
+
+/* -----------block relative + stiky--------------------- */
+
+.block__stiky_yellow{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.block__stiky_pink{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* -----------block fixed + absolute + stiky--------------------- */
+.block__box_relative {
+    position: relative;
+}
+.block__stiky_blue{
+    padding: 50px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.block__fixed_yellow{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+.block-main__relative{
+    position: relative;
+}
+.block__absolute_pink{
+    position: absolute;
+    top: 30px;
+    left: -50px;
+    z-index: 101;
+}
