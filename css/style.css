@@ -27,20 +27,24 @@ body{
 
 
 /* ----------------------header--------------------- */
-.container-for-header {
+/* .container-for-header {
+    max-width: 1020px;
+    margin: 0 auto;
+} */
+
+.header__container{
+    position: relative;
     max-width: 1020px;
     margin: 0 auto;
 }
-
-.header{
+.header__box{
+    padding: 26px 0 0;
+    /* position: relative;
+    z-index: 3; */
     position: fixed;
-    z-index: 50;
-    top: 26px;
-    max-width: 1020px;
+    z-index: 150;
 }
-
 .header__top {
-    position: relative;
     margin:  0 0 27px 0;
 }
 .top__logo {
@@ -164,22 +168,28 @@ body{
     left: 14px;
 }
 .cart__number {
-    display: inline-block;
     position: absolute;
-    top: -4px;
-    left: 19px;
+    top: -9px;
+    left: 19.5px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 2.2;
+    color: #FFFFFF;
+    letter-spacing: 0.15px;
 
 }
 
 
-/* ----------------------main-----premier-dog---------------- */
+/* --------------------------premier-dog---------------- */
 
 
 .premier-dog{
     position: relative;
-    z-index: 1;
-    padding: 280px 0 312px;
-    background: url(../img/main/Premier-dog.png) 0 0/ cover no-repeat;
+    z-index: 2;
+    background: url(../img/main/Premier-dog.png) center / cover no-repeat;
+}
+.premier-dog__box{
+    padding: 280px 0 312px 0;
 }
 .premier-dog__title {
     font-weight: 900;
@@ -187,10 +197,12 @@ body{
     color: #FFFFFF;
     margin: 0 0 48px 0;
     max-width: 583px;
-}
+} 
 
 
-/* ----------------------main-----------who-we-are----------------- */
+/* --------------------------------who-we-are----------------- */
+
+
 
 .who-we-are {
     position: relative;
@@ -211,7 +223,6 @@ body{
     width: 514px;
     height: 370px;
     position: absolute;
-    z-index: 3;
     bottom: -27px;
     left: -36px;
 }
@@ -221,11 +232,11 @@ body{
     width: 201px;
     height: 317px;
     position: absolute;
-    z-index: 3;
     top: -109px;
     right: -164px;
 }
 .who-we-are__content {
+    position: relative;
     padding: 100px 0 354px;
 }
 .who-we-are__subtitle {
@@ -251,7 +262,6 @@ body{
     top:-1px;
     left: 0;
 }
-
 .who-we-are__title {
     color: #FFFFFF;
     max-width: 583px;
@@ -269,18 +279,145 @@ body{
 }
 .who-we-are__image {
     position: absolute;
-    z-index: 4;
-    top: 400px;
+    bottom: -120px;
     left: 0;
     border-radius: 40px;
     overflow: hidden;
-    margin: 0 0 110px;
+    width: 846px;
+    height: 420px;
 }
 .who-we-are__img {
     width: 100%;
 }
 
-/* -----------практика-------------------- */
+
+
+
+/* --------------------------------------------*/
+
+
+/* ------------------- nemo  -------------------------*/
+
+
+.nemo{
+    background: #29C3BE;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+}
+.nemo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/icons/nemo/Blob2.svg) -115px -108px no-repeat, url(../img/icons/nemo/Circles.svg) 0  top no-repeat;
+    width: 500px;
+    height: 440px;
+}
+.nemo::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:  url(../img/icons/nemo/Line.svg) -90px 0 no-repeat; 
+    width: 621px;
+    height: 393px;
+    z-index: 1;
+}
+.nemo__box{
+    padding: 112px 0 169px 0;
+    position: relative;
+}
+
+.nemo__content {
+    position: relative;
+    max-width: 411px;
+    margin-left: auto;
+    margin-right: 0;
+    z-index: 2;
+}
+.nemo__title {
+    color: #FFFFFF;
+}
+.title {
+    margin: 0 0 51px ;
+}
+.nemo__dog-image{
+    position: absolute;
+    bottom: -34px;
+    left: -210px;
+    z-index: 1;
+}
+.nemo__ball-image{
+    position: absolute;
+    bottom: 276px;
+    right: -150px;
+    z-index: 4;
+}
+/* .nemo__ball-image::before{
+    position: absolute;
+    content: "";
+    background: url(../img/icons/nemo/Line.svg) 0 0 no-repeat;
+    top: -110px;
+    right: 30px;
+    width: 621px;
+    height: 393px;
+    z-index: 1;
+} */
+
+
+
+
+
+
+/* ------------------- gallery  -------------------------*/
+
+.gallery {
+
+}
+.gallery__container {
+    background: #5D62B5;
+    border-radius: 40px;
+    margin: -80px auto 240px;
+    position: relative;
+    z-index: 5;
+
+}
+.gallery__box {
+    max-width: 846px;
+    margin: 0 auto;
+    padding: 100px 0 410px;
+    position: relative;
+}
+.gallery__content {
+    color: #fff;
+}
+.gallery__subtitle {
+    margin: 0 0 33px 0;
+}
+.gallery__title {
+    margin: 0 0 148px 0;
+}
+.gallery__image {
+    width: 846px;
+    height: 480px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    border-radius: 40px;
+
+}
+.gallery__img {
+    width: 100%;
+}
+
+
+
+
+
+/* -----------полигон-------------------- */
+
 .appellative__title{
     text-align: center;
     text-decoration: underline;
@@ -306,7 +443,10 @@ body{
 .block{
     padding: 40px;
 }
+
+
 /* -----------background  block-------------------- */
+
 .block__name{
     padding: 40px 0;
     background: #FFF;
@@ -321,13 +461,19 @@ body{
 .block_yellow {
     background-color: rgb(255, 254, 170);
 }
+
+
 /* -----------block relative-------------------- */
+
+
 .block__relative{
     position: relative;
     top: 30px;
     left: 45px;
 }
+
 /* -----------block relative + z-index-------------------- */
+
 
 .block__z-index{
     position: relative;
@@ -335,7 +481,10 @@ body{
     top: 0;
     left: 0;
 }
+
+
 /* -----------block relative + absolute-------------------- */
+
 
 .block_viol {
     position: absolute;
@@ -358,7 +507,11 @@ body{
     z-index: 5;
 }
 
+
+
+
 /* -----------block relative + stiky--------------------- */
+
 
 .block__stiky_yellow{
     position: sticky;
@@ -373,6 +526,8 @@ body{
 
 
 /* -----------block fixed + absolute + stiky--------------------- */
+
+
 .block__box_relative {
     position: relative;
 }
