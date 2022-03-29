@@ -348,20 +348,6 @@ body{
     right: -150px;
     z-index: 4;
 }
-/* .nemo__ball-image::before{
-    position: absolute;
-    content: "";
-    background: url(../img/icons/nemo/Line.svg) 0 0 no-repeat;
-    top: -110px;
-    right: 30px;
-    width: 621px;
-    height: 393px;
-    z-index: 1;
-} */
-
-
-
-
 
 
 /* ------------------- gallery  -------------------------*/
