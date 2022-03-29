@@ -27,10 +27,6 @@ body{
 
 
 /* ----------------------header--------------------- */
-/* .container-for-header {
-    max-width: 1020px;
-    margin: 0 auto;
-} */
 
 .header__container{
     position: relative;
@@ -39,8 +35,6 @@ body{
 }
 .header__box{
     padding: 26px 0 0;
-    /* position: relative;
-    z-index: 3; */
     position: fixed;
     z-index: 150;
 }
