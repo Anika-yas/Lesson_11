@@ -332,8 +332,6 @@ body{
 }
 .nemo__title {
     color: #FFFFFF;
-}
-.title {
     margin: 0 0 51px ;
 }
 .nemo__dog-image{
@@ -376,7 +374,6 @@ body{
     margin: 0 0 33px 0;
 }
 .gallery__title {
-    margin: 0 0 148px 0;
 }
 .gallery__image {
     width: 846px;
