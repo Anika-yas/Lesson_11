@@ -505,7 +505,7 @@ body{
 /* -----------block fixed + absolute + stiky--------------------- */
 
 
-.block__box_relative {
+.block-main__relative {
     position: relative;
 }
 .block__stiky_blue{
@@ -519,9 +519,6 @@ body{
     top: 0;
     right: 0;
     z-index: 100;
-}
-.block-main__relative{
-    position: relative;
 }
 .block__absolute_pink{
     position: absolute;
